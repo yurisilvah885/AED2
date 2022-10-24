@@ -1,0 +1,14 @@
+-#include <stdio.h>
+int main() {
+int a[150], b[150] ,c[150], total;
+printf ("entre com o numero de clientes que pagaram por  cheque");
+scanf ("%d", &a);
+printf("pagaram com cartao de credito");
+scanf("%d", &b);
+printf ("pagaram com cheques");
+scanf ("%d", &c);
+
+total= a[150]+b[150]+c[150];
+printf ("%d", total);
+
+}
