@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main (){
+
+int votos, totalvotos,brancos,nulos,lidos,vencedor, candidato1,candidato2;
+printf ("digite seu voto");
+scanf ("%d", &votos);
+
+if (votos=1){
+printf ("voto confirmado candidato 1");
+return 0;
+
+}
+if (votos=2){
+printf ("voto confirmado candidato 2");
+return 0;
+}
+if (votos =3){
+printf ("voto em branco");
+return 0;
+}
+if ( votos =4){
+printf ("voto nulo");
+return 0;
+}
+if(candidato1>candidato2){
+printf ("candidato 1 vencedor");
+return 0;
+
+}
+else{
+printf ("candidato 2 vencedor");
+return 0;
+
+}
+return 0;
+}
+
+
+
+
