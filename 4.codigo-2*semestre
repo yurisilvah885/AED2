@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdio.h>
+#define TAM 3
+
+typedef struct BANDA
+{
+    char nome [50];
+    char estilo [50];
+    int qtd;
+    int rank;
+}BANDA;
+void leBANDA (BANDA *v)
+{
+    for (int i=0;i<TAM;i++){
+    printf ("\nnome da banda");
+    scanf ("%s", v[i].nome);
+    printf ("\nestilo de banda");
+    scanf ("%s", v[i].estilo);
+    printf ("\nquantidade de integrantes");
+    scanf ("%d", &v[i].qtd);
+    printf ("\nrank da banda");
+    scanf ("%d", &v[i].rank);
+}
+    
+}
+void exibBANDA (BANDA *exib){
+    for (int i=0;i<TAM;i++){
+        
+    printf ("\nnome banda\n %s", exib[i].nome);
+    printf ("\nestilo de banda \n %s", exib[i].estilo);
+    printf ("\nquantidade \n %d", exib[i].qtd);
+    printf ("\nrank \n %d", exib[i].rank);
+    }
+    
+}
+void buscaBANDA (BANDA *j){
+    char aux[50];
+    int achou=0;
+    for (int i=0;i<TAM;i++)   {
+        if (strcmp(busca[i].estilo,aux)==0){
+            achou =1;
+            printf ("\n banda :%s", busca[i].nome);
+        }
+        
+        
+    }
+    if (achou) printf ("\n banda encontrada !");
+    else printf ("\n banda ausente");
+    
+}
+
+int main(void)
+{
+    BANDA v [TAM];
+    leBANDA (v);
+    printf (" \n listagem de todas as bandas \n");
+    exibBANDA (v);
+    
+  
+    
+
+    return 0;
+}
+    
