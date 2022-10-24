@@ -1,0 +1,22 @@
+#include <stdio.h>
+int leIdade () {
+    int i; 
+    printf ("digite a idade : ");
+    scanf ("%d", &i);
+    while (i<0 || i>110){
+    printf ("digite novamente :");
+    scanf ("%d", &i);
+    return i;}
+}
+int main()
+{
+    int id1, id2, soma;
+    id1= leIdade ();
+    id2 = leIdade ();
+    soma = id1 - id2 ;
+    printf ("%d", soma);
+    
+
+    return 0;
+}
+
