@@ -1,0 +1,29 @@
+int verificaintervalo(int x,int min, int max){
+    if(x <= max && x>= min)
+    printf("O valor se encontra no intervalo");
+    else
+    printf("O valor nao se encontra no intervalo");
+    return(x);
+}
+
+
+
+int main()
+{
+    
+    int num1;
+    int max,min;
+    int retorno;
+    
+    printf("Digite um numero: ");
+    scanf("%d", &num1);
+    printf("Digite um valor de um intervalo: ");
+    scanf("%d", &max);
+    printf("Digite o segundo valor de um intervalo: ");
+    scanf("%d", &min);
+    
+    retorno= verificaintervalo(num1,min,max);
+    
+    return(retorno);
+}
+
