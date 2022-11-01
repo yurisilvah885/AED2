@@ -1,0 +1,67 @@
+float calculacomissao(float vendas){
+    float retorno;
+    
+    if(vendas > 105000)
+        retorno = (vendas * 0.7)/100;
+    if (vendas < 105000)
+        retorno = (vendas * 0.5)/100;
+        
+    return retorno;
+    
+}
+int main()
+{
+    struct empregados{
+        int matricula;
+        char nome[30];
+        float sal;
+        float vendasfunc;
+        float comissao;
+        float salfinal;
+    };
+    
+    #define tam 2
+    struct empregados Funcionarios[tam];
+    float mediasal;
+    float soma=0;
+    
+    for(int i=0;i<tam;i++){
+    printf("-------------Olá, bem vindo!-------------\n");
+    printf("Digite seu numero de matricula: ");
+    scanf("%d", &Funcionarios[i].matricula);
+    printf("Digite o seu nome: ");
+    scanf("%s", Funcionarios[i].nome);
+    printf("Digite o seu salário: ");
+    scanf("%f", &Funcionarios[i].sal);
+    printf("Quanto você vendeu esse mês? ");
+    scanf("%f", &Funcionarios[i].vendasfunc);
+    printf("///////////////////////////////////////////\n");
+    }
+    
+        for(int i=0;i<tam;i++){
+          Funcionarios[i].comissao=calculacomissao(Funcionarios[i].vendasfunc); 
+          Funcionarios[i].salfinal=Funcionarios[i].sal+Funcionarios[i].comissao;
+          soma+= Funcionarios[i].sal;
+          
+        }
+        mediasal= soma/tam;
+        
+    for(int i=0;i<tam;i++){
+        printf("\n-----EMPREGADOS-----\n");
+        printf("\nMatricula: %d", Funcionarios[i].matricula);
+        printf("\nNome: %s", Funcionarios[i].nome);
+        printf("\nSeu salario: %.3f", Funcionarios[i].sal);
+        printf("\nSuas vendas: %.2f", Funcionarios[i].vendasfunc);
+        printf("\nSua comissão: %.2f", Funcionarios[i].comissao);
+        printf("\nSeu salario completo é de: %.2f", Funcionarios[i].salfinal);
+        }
+        
+        printf("\n------------------------------------\n");
+        printf("\nA media salarial da empresa é de: %.2f", mediasal);
+        printf("\nA empresa contém: %d funcionarios", tam);
+        
+        
+        
+    return 0;
+}
+
