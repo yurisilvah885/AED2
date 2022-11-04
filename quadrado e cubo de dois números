@@ -1,0 +1,26 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- O código deve receber dois números , e devolver o quadrado do primeiro
+e o cubo do segundo.
+
+*******************************************************************************/
+#include <stdio.h>
+
+void troca (int a, int b, int *quadrado, int *cubo) {
+    *quadrado= a*a;
+    *cubo= b*b*b;
+}
+
+int main (){
+    troca (&quadrado, &cubo, a,b);
+    printf ("entre com o primeiro valor :");
+    scanf ("%d", &a);
+    printf ("entre com o segundo valor :" );
+    scanf ("%d", &b);
+    printf ("%d", *quadrado);
+    printf ("%d", *cubo);
+
+
+return 0;
+}
