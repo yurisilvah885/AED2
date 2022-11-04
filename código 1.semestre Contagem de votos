@@ -1,3 +1,12 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- Fazer a contagem de votos de dois candidatos , e os votos brancos e nulos.
+O código deverá mostrar o vencedor dentre eles e o total de votos brancos e nulos.
+
+*******************************************************************************/
+
+
 #include <stdio.h>
 int main (){
 
