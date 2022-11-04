@@ -1,4 +1,15 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- O código mostra  150 clientes, e apresenta quantos pagaram em cheque,
+cartão de crédito e cheques. No final apresenta o total relacionado a soma
+entre esses três métodos.
+
+*******************************************************************************/
+
+
 -#include <stdio.h>
+
 int main() {
 int a[150], b[150] ,c[150], total;
 printf ("entre com o numero de clientes que pagaram por  cheque");
