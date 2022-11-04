@@ -1,3 +1,14 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo-o código mostra dois tipos de dados e apresentar o limite , dentro da variável CICLO.
+O usuário deve entrar com o valor do n.
+
+
+
+*******************************************************************************/
+
+
 #include <stdio.h>
 void ciclo (int n, int limite){
     printf ("\n %d", n);
@@ -16,7 +27,7 @@ void misterio (int n) {
         misterio (n+1);
     }
 }
-
+////////////////////////////////////////////////////////////////////////////////////
 int main()
 {
     printf ("CICLO (2,10)"); ciclo (2,10);
