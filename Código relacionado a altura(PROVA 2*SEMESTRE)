@@ -1,0 +1,49 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- o código deverá apresentar o valor da maior altura, da menor altura e 
+a média das alturas. No final, deverá apresentar quantas pessoas tem altura 
+inferior a média das alturas.
+
+*******************************************************************************/
+#include <stdio.h>
+#define TAM 4
+int main () {
+   
+   float h[TAM];
+   int i;
+   float menorh=0, maiorh=0, mediah=0;
+   printf ("entre com as alturas para preencher o array: \n");
+   for (i=0; i <TAM; i++) {
+       scanf ("%f", &h[i]);
+   }
+   maiorh = h[0];
+   manorh= h[0];
+   
+   for (int i=0; i<TAM; i++){
+       mediah = mediah=h[i];
+       if (menorh >h[i]){
+           menorh = h[i];
+       }
+       if (maiorh<h[i]){
+           maiorh=h[i];
+       }
+   }
+   mediah= mediah/TAM;
+   printf ("\n ***ALTURA MÉDIA: %f***", mediah);
+   for (int i=0; i<TAM; i++){
+       if (h[i] <mediah){
+           hinfm= hinfm +1;
+       }
+   }
+   printf ("\n ****Menor altura****: %f", menorh);
+   printf ("\n ****Maior altura****: %f", maiorh);
+   printf ("\nQuantidade de pessoas com altura inferior a média**** : %d", hinfm);
+   
+   return 0;
+}
+
+
+
+
+
