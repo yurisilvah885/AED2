@@ -1,3 +1,12 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- Verificar se o valor é encontrado dentro do intervalo passado pelo usuário.
+Dar o valor mázimo e o valor mínimo passado pelo usuário.
+
+*******************************************************************************/
+
+
 int verificaintervalo(int x,int min, int max){
     if(x <= max && x>= min)
     printf("O valor se encontra no intervalo");
