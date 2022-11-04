@@ -1,3 +1,12 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- Calcular as vendas, a comissão por cada venda, apresentar o nome dado 
+pelo usuário, a média do salário entre os funcionários, e no final apresentar a 
+quantidade de funcioários.
+*******************************************************************************/
+
+
 float calculacomissao(float vendas){
     float retorno;
     
@@ -19,7 +28,7 @@ int main()
         float comissao;
         float salfinal;
     };
-    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     #define tam 2
     struct empregados Funcionarios[tam];
     float mediasal;
@@ -37,7 +46,7 @@ int main()
     scanf("%f", &Funcionarios[i].vendasfunc);
     printf("///////////////////////////////////////////\n");
     }
-    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
         for(int i=0;i<tam;i++){
           Funcionarios[i].comissao=calculacomissao(Funcionarios[i].vendasfunc); 
           Funcionarios[i].salfinal=Funcionarios[i].sal+Funcionarios[i].comissao;
