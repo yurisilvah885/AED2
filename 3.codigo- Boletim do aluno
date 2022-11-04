@@ -1,9 +1,13 @@
 /******************************************************************************
-Yuri da Silva Pio
-26/09/22
-AED2
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- Calcular a média de dois alunos, o usuário deverá entrar com as notas.
+No main, deverá mostrar as matrículas e a quantidade de alunos e calcular a 
+média entre eles.
 
 *******************************************************************************/
+
+
 #include <stdio.h>
 
  float calculamedia( float N1, float N2)
@@ -12,7 +16,7 @@ AED2
     md = (N1 + N2)/2;
     return (md);
 }
-
+//////////////////////////////////////////////////////////////////////////////////
 int main() {
     int i,x;
     float sm,a,b;
@@ -27,7 +31,7 @@ int main() {
     };
     struct estruturaAluno alunos[x];
    
- 
+////////////////////////////////////////////////////////////////////////////////// 
     for (i=0;i<x;i++) {
        printf( "||||||||||||||||||||DADOS DO ALUNO||||||||||||||||||| \n\n");
        printf( "Matrícula do aluno: ");
