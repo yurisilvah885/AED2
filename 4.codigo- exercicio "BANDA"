@@ -1,3 +1,13 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- Estrutura para um tipo de dado e armazenar as informações de uma banda.
+Nome, estilo, quantidade de integrantes e o ranking. Usar vetor para chamar 3 
+bandas diferentes.
+
+*******************************************************************************/
+
+
 #include <stdio.h>
 #include <stdio.h>
 #define TAM 3
@@ -21,7 +31,7 @@ void leBANDA (BANDA *v)
     printf ("\nrank da banda");
     scanf ("%d", &v[i].rank);
 }
-    
+ ///////////////////////////////////////////////////////////////////////////   
 }
 void exibBANDA (BANDA *exib){
     for (int i=0;i<TAM;i++){
@@ -31,7 +41,7 @@ void exibBANDA (BANDA *exib){
     printf ("\nquantidade \n %d", exib[i].qtd);
     printf ("\nrank \n %d", exib[i].rank);
     }
-    
+ ////////////////////////////////////////////////////////////////////////////
 }
 void buscaBANDA (BANDA *j){
     char aux[50];
@@ -46,7 +56,7 @@ void buscaBANDA (BANDA *j){
     }
     if (achou) printf ("\n banda encontrada !");
     else printf ("\n banda ausente");
-    
+ /////////////////////////////////////////////////////////////////////////////   
 }
 
 int main(void)
