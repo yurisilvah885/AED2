@@ -1,6 +1,14 @@
+/******************************************************************************
+
+YURI DA SILVA PIO RA-8130022
+Objetivo- Fazer a troca entre dois valores , dentro da função main.
+
+*******************************************************************************/
+
+
 #include <stdio.h>
 
-void troca(int *x, int *y){
+void troca(int *a, int *b){
     int aux;
     
     //ENTRADAS
@@ -9,10 +17,7 @@ void troca(int *x, int *y){
     a = b;
     b = aux;
     */
-    
-    aux = *x;
-    *x = *y;
-    *y = aux;
+   
 }
 int main()
 {
